@@ -1,5 +1,6 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
-
-<button size="mini" class = "title">确定</button>
-<button size="mini" class = "title">确定</button>
+<view>hello {{name}}{{class}}</view>
+<view wx:for="{{students}}">{{item.name}}-{{item.age}}</view>
+<view>当前计数:{{counter}}</view>
+<button size="mini" bindtap="handleBtnClick">+</button>
+<button size="mini" bindtap="handleBtnSubtraction">-</button>
